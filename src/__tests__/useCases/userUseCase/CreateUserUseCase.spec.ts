@@ -1,6 +1,6 @@
-import { InMemoryUsersRepository } from "../../modules/users/repositories/in-memory/InMemoryUsersRepository";
-import { CreateUserError } from "../../modules/users/useCases/createUser/CreateUserError";
-import { CreateUserUseCase } from "../../modules/users/useCases/createUser/CreateUserUseCase"
+import { InMemoryUsersRepository } from "../../../modules/users/repositories/in-memory/InMemoryUsersRepository";
+import { CreateUserError } from "../../../modules/users/useCases/createUser/CreateUserError";
+import { CreateUserUseCase } from "../../../modules/users/useCases/createUser/CreateUserUseCase"
 
 let createUserUseCase: CreateUserUseCase;
 let inMemoryUsersRepository: InMemoryUsersRepository;

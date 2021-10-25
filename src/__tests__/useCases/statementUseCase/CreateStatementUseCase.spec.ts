@@ -1,10 +1,10 @@
-import { OperationType } from '../../modules/statements/entities/Statement';
-import { CreateStatementError } from '../../modules/statements/useCases/createStatement/CreateStatementError';
-import { CreateStatementUseCase } from '../../modules/statements/useCases/createStatement/CreateStatementUseCase';
-import { ICreateStatementDTO } from '../../modules/statements/useCases/createStatement/ICreateStatementDTO';
-import { InMemoryUsersRepository } from '../../modules/users/repositories/in-memory/InMemoryUsersRepository';
-import { CreateUserUseCase } from '../../modules/users/useCases/createUser/CreateUserUseCase';
-import { InMemoryStatementsRepository } from './../../modules/statements/repositories/in-memory/InMemoryStatementsRepository';
+import { OperationType } from '../../../modules/statements/entities/Statement';
+import { CreateStatementError } from '../../../modules/statements/useCases/createStatement/CreateStatementError';
+import { CreateStatementUseCase } from '../../../modules/statements/useCases/createStatement/CreateStatementUseCase';
+import { ICreateStatementDTO } from '../../../modules/statements/useCases/createStatement/ICreateStatementDTO';
+import { InMemoryUsersRepository } from '../../../modules/users/repositories/in-memory/InMemoryUsersRepository';
+import { CreateUserUseCase } from '../../../modules/users/useCases/createUser/CreateUserUseCase';
+import { InMemoryStatementsRepository } from '../../../modules/statements/repositories/in-memory/InMemoryStatementsRepository';
 
 let inMemoryStatementsRepository: InMemoryStatementsRepository;
 let inMemoryUsersRepository: InMemoryUsersRepository;

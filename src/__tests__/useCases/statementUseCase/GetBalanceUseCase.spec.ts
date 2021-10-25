@@ -1,10 +1,10 @@
-import { OperationType } from "../../modules/statements/entities/Statement";
-import { InMemoryStatementsRepository } from "../../modules/statements/repositories/in-memory/InMemoryStatementsRepository";
-import { CreateStatementUseCase } from "../../modules/statements/useCases/createStatement/CreateStatementUseCase";
-import { GetBalanceError } from "../../modules/statements/useCases/getBalance/GetBalanceError";
-import { GetBalanceUseCase } from "../../modules/statements/useCases/getBalance/GetBalanceUseCase";
-import { InMemoryUsersRepository } from "../../modules/users/repositories/in-memory/InMemoryUsersRepository";
-import { CreateUserUseCase } from "../../modules/users/useCases/createUser/CreateUserUseCase";
+import { OperationType } from "../../../modules/statements/entities/Statement";
+import { InMemoryStatementsRepository } from "../../../modules/statements/repositories/in-memory/InMemoryStatementsRepository";
+import { CreateStatementUseCase } from "../../../modules/statements/useCases/createStatement/CreateStatementUseCase";
+import { GetBalanceError } from "../../../modules/statements/useCases/getBalance/GetBalanceError";
+import { GetBalanceUseCase } from "../../../modules/statements/useCases/getBalance/GetBalanceUseCase";
+import { InMemoryUsersRepository } from "../../../modules/users/repositories/in-memory/InMemoryUsersRepository";
+import { CreateUserUseCase } from "../../../modules/users/useCases/createUser/CreateUserUseCase";
 
 let inMemoryStatementsRepository: InMemoryStatementsRepository;
 let inMemoryUsersRepository: InMemoryUsersRepository;

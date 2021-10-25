@@ -1,8 +1,8 @@
-import { InMemoryUsersRepository } from "../../modules/users/repositories/in-memory/InMemoryUsersRepository";
-import { CreateUserUseCase } from "../../modules/users/useCases/createUser/CreateUserUseCase";
-import { ICreateUserDTO } from "../../modules/users/useCases/createUser/ICreateUserDTO";
-import { ShowUserProfileError } from "../../modules/users/useCases/showUserProfile/ShowUserProfileError";
-import { ShowUserProfileUseCase } from "../../modules/users/useCases/showUserProfile/ShowUserProfileUseCase";
+import { InMemoryUsersRepository } from "../../../modules/users/repositories/in-memory/InMemoryUsersRepository";
+import { CreateUserUseCase } from "../../../modules/users/useCases/createUser/CreateUserUseCase";
+import { ICreateUserDTO } from "../../../modules/users/useCases/createUser/ICreateUserDTO";
+import { ShowUserProfileError } from "../../../modules/users/useCases/showUserProfile/ShowUserProfileError";
+import { ShowUserProfileUseCase } from "../../../modules/users/useCases/showUserProfile/ShowUserProfileUseCase";
 
 let showUserProfileUseCase: ShowUserProfileUseCase;
 let inMemoryUsersRepository: InMemoryUsersRepository;
