@@ -38,7 +38,8 @@ describe('Get Balance from User', () => {
       user_id: userCreated.id as string,
       amount: 100,
       description: 'Firs deposit',
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      sender_id: userCreated.id as string
     });
 
     const balance = await getBalanceUseCase.execute({

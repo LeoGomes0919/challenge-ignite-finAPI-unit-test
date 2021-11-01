@@ -35,7 +35,8 @@ describe('Create Statements', () => {
       user_id: userCreated.id as string,
       amount: 100,
       description: 'Firs deposit',
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      sender_id: userCreated.id as string
     });
 
     expect(statement.amount).toBe(100);
@@ -47,7 +48,8 @@ describe('Create Statements', () => {
         user_id: '12345',
         amount: 100,
         description: 'Firs deposit',
-        type: OperationType.DEPOSIT
+        type: OperationType.DEPOSIT,
+        sender_id: '12345'
       });
     }).rejects.toBeInstanceOf(CreateStatementError.UserNotFound);
   });
@@ -66,7 +68,8 @@ describe('Create Statements', () => {
         user_id: userCreated.id as string,
         amount: 100,
         description: 'Firs deposit',
-        type: OperationType.WITHDRAW
+        type: OperationType.WITHDRAW,
+        sender_id: userCreated.id as string
       });
     }).rejects.toBeInstanceOf(CreateStatementError.InsufficientFunds);
   });

@@ -39,7 +39,8 @@ describe('Get transaction information', () => {
       user_id: userCreated.id as string,
       amount: 100,
       description: 'Firs deposit',
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      sender_id: userCreated.id as string
     });
 
     const informationStatement = await getStatementOperationUseCase.execute({
@@ -62,7 +63,8 @@ describe('Get transaction information', () => {
         user_id: userCreated.id as string,
         amount: 100,
         description: 'Firs deposit',
-        type: OperationType.DEPOSIT
+        type: OperationType.DEPOSIT,
+        sender_id: userCreated.id as string
       });
 
       await getStatementOperationUseCase.execute({
